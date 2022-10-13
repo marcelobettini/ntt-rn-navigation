@@ -3,6 +3,7 @@ import useFetch from '../hooks/useFetch';
 import NewsItem from '../component/NewsItem';
 
 import { styles } from "../styles/styles";
+
 const url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=5ff475ea07084b96bc8176a66872ce46'
 
 const HomeScreen = ({ navigation }) => {
@@ -23,6 +24,7 @@ const HomeScreen = ({ navigation }) => {
     ) :
       (
         <View style={[styles.pad, styles.container]}>
+
           <FlatList
             data={data.articles}
             showsVerticalScrollIndicator={false}
